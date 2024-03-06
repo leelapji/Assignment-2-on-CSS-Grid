@@ -3,31 +3,24 @@ body {
     padding: 0;
 }
 
-.gallery {
+.main_container {
     display: grid;
-    background-color: black;
-    grid-template-columns: repeat(3, 400px); 
-    gap: 20px; 
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
-.item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+
+.grid_item {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
 }
-.item img{
-    max-width: 100%;
-    height: auto;
-}
-#Image4{
-    width: 1000px;
-    height: 300px;
-}
-#Image5{
-    width: 1000px;
-    height: 300px;
-}
-#Image6{
-    width: 1000px;
-    height: 300px;
+
+.grid_item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
