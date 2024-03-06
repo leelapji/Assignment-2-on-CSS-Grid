@@ -1,26 +1,25 @@
-body {
-    margin: 0;
+html,body{
+    width:100%;
+    height:100%;
     padding: 0;
+    margin: 0;
 }
 
-.main_container {
+.main_container{
+    width: 95%;
+    height:95%;
+    border:1px solid red;
+    margin:auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    grid-template-rows: repeat(3,200px);
 }
-
-.grid_item {
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    position: relative;
+.grid_item{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    grid-area: span;
 }
-
-.grid_item img {
-    position: absolute;
+.grid_item img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100%;    
 }
